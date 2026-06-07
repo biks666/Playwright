@@ -1,0 +1,99 @@
+let x=20;
+let y=10;
+
+//++x;
+//console.log(x++);
+//--y;
+//console.log(y--);    
+
+console.log(++x);
+//--y;
+console.log(--y);     
+
+let h ="5";
+let i = 5;
+console.log(h==i);
+console.log(h===i); 
+
+let x=20;
+let y=30;
+console.log(x>=y);
+console.log(x<=y);
+
+let name = "John";
+let age = 25;
+console.log(name=="John" && age > 20);
+console.log((name=="John" || age < 20));
+
+let a = 10;
+if (a>18) {
+    console.log("You are eligible to vote");
+} else {
+    console.log("You are not eligible to vote");
+}
+
+let marks = 65;
+if (marks>=85) {
+    console.log ("You got an A+ grade");
+}
+else if (marks >= 70) {
+    console.log ("You got an A grade");
+}
+else if (marks >= 60) {
+    console.log ("You got a B grade");
+}
+else {
+    console.log ("You got a C grade");
+}
+
+let age =10;
+console.log(age>=18 ?console.log("You arr eligible to vote") : (console.log("You are not eligible to vote")));
+
+let age = 10;
+let message = (age >= 18) ? "Adult" : "Minor";
+console.log(message);
+
+let marks =90;
+
+let result = marks>=95? ("You got an A+ grade") : (marks >= 85 ? "You are A grade" : (marks >= 60 ? "You are B grade" : "You are C grade"));
+console.log(result);
+
+let day = 1;
+switch(day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    default:
+        console.log("Invalid day");
+}
+
+let month = "jul";
+
+switch(month.toLowerCase()) {
+    case "jan":
+    case "feb":
+    case "nov":
+    case "dec":
+        console.log("Winter");
+        break;
+    case "mar":
+    case "apr":
+    case "may":
+    case "jun":
+        console.log("Summer");
+        break;
+    case "jul":
+    case "aug":
+    case "sep":
+    case "oct":
+        console.log("Rainy");
+        break;
+    default:
+        console.log("Invalid month");
+}

@@ -1,0 +1,19 @@
+function fetchDBrecords(){
+ console.log("Waiting to fetch DB records")
+ 
+ }
+ 
+ setTimeout(fetchDBrecords, 3000);
+ console.log("ABCD")
+ console.log(" I am Bikram")
+
+ setTimeout (function(){console.log("This will execute after 3 seconds")}, 3000); 
+
+setTimeout(()=>{console.log("This is an async function:")},3000)
+console.log("This is a sync function:") 
+console.log("ABCDE") 
+
+
+ let add = (a+b) => (console.log(a+b))
+ add(5, 3)
+   

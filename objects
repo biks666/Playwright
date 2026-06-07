@@ -1,0 +1,68 @@
+
+
+let customer = {
+  
+  personName: "Bikram",
+  age: 20
+}
+
+console.log(customer)
+
+console.log("Customer Name: " + customer.personName)
+console.log(customer['age'])
+
+console.log(customer['personName'])
+
+customer.personName = "Radha"
+customer['age'] = 16
+
+console.log(`${customer.personName} ${customer.age}`);
+
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1000);
+}
+
+
+
+for (i=0; i<3; i++) {
+  
+  setTimeout(()=>console.log(i), 1000)
+}
+
+console.log(x); // ReferenceError — TDZ
+let x = 10;
+
+const obj1 = {
+  name: "Rahul",
+  id: 33
+}
+console.log(obj1)
+obj1.name = "Rohit"
+console.log(obj1) 
+obj1 = {"name": "Bikram", "id": 55} // TypeError: Assignment to constant variable. 
+
+const arr1 = [1,2,3,4];
+arr1.push(5);
+
+console.log(arr1);
+
+let obj2 = {name:"Bikram"}
+
+obj1 = obj2
+
+console.log(obj1)
+obj1.name = "Rahul"
+console.log(obj1)
+
+function greet(name, callback1) {
+  
+  console.log("Hello  " + name)
+  callback1()
+}
+
+function goodBye() {
+  
+console.log("goodBye....take care")
+}
+
+greet("Bikram", goodBye)
